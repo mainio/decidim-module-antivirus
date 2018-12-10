@@ -6,6 +6,8 @@
 A [Decidim](https://github.com/decidim/decidim) module to add antivirus checks
 as validations for Decidim's public file uploads, e.g. for proposals.
 
+![Decidim Antivirus](sample.png)
+
 The antivirus checks are done through ClamAV using
 [Clamby](https://github.com/kobaltz/clamby).
 

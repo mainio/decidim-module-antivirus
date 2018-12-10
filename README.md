@@ -1,7 +1,10 @@
 # Decidim::Antivirus
 
-A Decidim module to add antivirus checks as validations for Decidim's public
-file uploads, e.g. for proposals.
+[![Build Status](https://travis-ci.org/mainio/decidim-module-antivirus.svg?branch=master)](https://travis-ci.org/mainio/decidim-module-antivirus)
+[![codecov](https://codecov.io/gh/mainio/decidim-module-antivirus/branch/master/graph/badge.svg)](https://codecov.io/gh/mainio/decidim-module-antivirus)
+
+A [Decidim](https://github.com/decidim/decidim) module to add antivirus checks
+as validations for Decidim's public file uploads, e.g. for proposals.
 
 The antivirus checks are done through ClamAV using
 [Clamby](https://github.com/kobaltz/clamby).

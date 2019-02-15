@@ -6,20 +6,20 @@ describe Decidim::Antivirus::Engine do
   it "sets up antivirus during initialization" do
     expect(Ratonvirus).to receive(:configure).and_call_original
 
-    config = described_class.initializers.find { |i|
-      i.name == 'decidim_antivirus.setup'
-    }
+    config = described_class.initializers.find do |i|
+      i.name == "decidim_antivirus.setup"
+    end
     config.run
 
     expect(Ratonvirus.scanner).to be_a(Ratonvirus::Scanner::Clamby)
     expect(Ratonvirus.storage).to be_a(Ratonvirus::Storage::Multi)
-    expect(Ratonvirus.storage.config[:storages]).to eq([
-      :filepath, :carrierwave
-    ])
+    expect(Ratonvirus.storage.config[:storages]).to eq(
+      [:filepath, :carrierwave]
+    )
   end
 
   context "when scanner is available" do
-    before(:each) do
+    before do
       allow(Ratonvirus.scanner).to receive(:available?).and_return(true)
     end
 
@@ -32,7 +32,7 @@ describe Decidim::Antivirus::Engine do
   end
 
   context "when scanner does not exist" do
-    before(:each) do
+    before do
       allow(Ratonvirus.scanner).to receive(:available?).and_return(false)
     end
 

@@ -15,9 +15,9 @@ describe Decidim::Antivirus::FileVirusScannable do
   end
 
   it "has the AntivirusValidator attached to the file attribute" do
-    validator_kinds = subject.validators.select { |v|
+    validator_kinds = subject.validators.select do |v|
       v.attributes.include?(:file)
-    }.map(&:kind)
+    end.map(&:kind)
 
     expect(validator_kinds).to include(:antivirus)
   end

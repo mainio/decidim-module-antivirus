@@ -34,7 +34,7 @@ https://github.com/mainio/ratonvirus-clamby
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'decidim-antivirus'
+gem "decidim-antivirus"
 ```
 
 And then execute:

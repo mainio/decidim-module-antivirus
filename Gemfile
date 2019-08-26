@@ -13,8 +13,8 @@ require_relative "#{base_path}lib/decidim/antivirus/version"
 gem "decidim", Decidim::Antivirus::DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
-gem "bootsnap", "~> 1.3"
-gem "puma", "~> 3.0"
+gem "bootsnap", "~> 1.4"
+gem "puma", "~> 3.12"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do
@@ -35,3 +35,6 @@ end
 group :test do
   gem "codecov", require: false
 end
+
+# See: https://github.com/decidim/decidim/pull/5303
+gem "ransack", "~> 2.1.1"

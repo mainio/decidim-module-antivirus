@@ -18,7 +18,7 @@ gem "puma", "~> 3.12"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do
-  gem "byebug", "~> 10.0", platform: :mri
+  gem "byebug", "~> 11.0", platform: :mri
 
   gem "decidim-dev", Decidim::Antivirus::DECIDIM_VERSION
 end
@@ -35,6 +35,3 @@ end
 group :test do
   gem "codecov", require: false
 end
-
-# See: https://github.com/decidim/decidim/pull/5303
-gem "ransack", "~> 2.1.1"

@@ -10,10 +10,10 @@ base_path = ""
 base_path = "../" if File.basename(__dir__) == "development_app"
 require_relative "#{base_path}lib/decidim/antivirus/version"
 
-DECIDIM_DEV_VERSION = { github: "decidim/decidim", branch: "develop" }.freeze
+#DECIDIM_VERSION = Decidim::Antivirus::DECIDIM_VERSION
+DECIDIM_VERSION = { github: "decidim/decidim", branch: "release/0.22-stable" }
 
-# gem "decidim", Decidim::TermCustomizer::DECIDIM_VERSION
-gem "decidim", DECIDIM_DEV_VERSION
+gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
 gem "bootsnap", "~> 1.4"
@@ -23,7 +23,7 @@ gem "uglifier", "~> 4.1"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
 
-  gem "decidim-dev", DECIDIM_DEV_VERSION
+  gem "decidim-dev", DECIDIM_VERSION
 end
 
 group :development do

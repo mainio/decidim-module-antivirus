@@ -14,7 +14,7 @@ gem "decidim", Decidim::Antivirus::DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
 gem "bootsnap", "~> 1.4"
-gem "puma", "~> 3.12"
+gem "puma", "~> 4.3.3"
 gem "uglifier", "~> 4.1"
 
 group :development, :test do

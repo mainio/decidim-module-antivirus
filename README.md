@@ -1,6 +1,6 @@
 # Decidim::Antivirus
 
-[![Build Status](https://travis-ci.org/mainio/decidim-module-antivirus.svg?branch=master)](https://travis-ci.org/mainio/decidim-module-antivirus)
+[![Build Status](https://github.com/mainio/decidim-module-antivirus/actions/workflows/ci_antivirus.yml/badge.svg)](https://github.com/mainio/decidim-module-antivirus/actions)
 [![codecov](https://codecov.io/gh/mainio/decidim-module-antivirus/branch/master/graph/badge.svg)](https://codecov.io/gh/mainio/decidim-module-antivirus)
 
 A [Decidim](https://github.com/decidim/decidim) module to add antivirus checks

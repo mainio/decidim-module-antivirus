@@ -7,6 +7,7 @@ require "decidim/antivirus/version"
 Gem::Specification.new do |spec|
   spec.name = "decidim-antivirus"
   spec.version = Decidim::Antivirus::VERSION
+  spec.required_ruby_version = ">= 2.7"
   spec.authors = ["Antti Hukkanen"]
   spec.email = ["antti.hukkanen@mainiotech.fi"]
 

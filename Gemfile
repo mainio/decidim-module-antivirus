@@ -12,7 +12,7 @@ require_relative "#{base_path}lib/decidim/antivirus/version"
 
 DECIDIM_VERSION = Decidim::Antivirus::DECIDIM_VERSION
 
-gem "decidim", DECIDIM_VERSION
+gem "decidim", ">= 0.24.2", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
 gem "bootsnap", "~> 1.4"
@@ -21,7 +21,7 @@ gem "uglifier", "~> 4.1"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
-  gem "decidim-dev", DECIDIM_VERSION
+  gem "decidim-dev", ">= 0.24.2", DECIDIM_VERSION
   gem "rubocop-faker"
   gem "rubocop-performance", "~> 1.6.0"
 end

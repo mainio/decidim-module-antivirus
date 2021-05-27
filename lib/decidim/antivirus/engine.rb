@@ -15,7 +15,7 @@ module Decidim
       config.to_prepare do
         if Ratonvirus.scanner.available?
           # Add virus scanning to the Decidim attachments
-          Decidim::Attachment.send(:include, FileVirusScannable)
+          Decidim::Attachment.include FileVirusScannable
         end
       end
     end

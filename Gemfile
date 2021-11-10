@@ -19,6 +19,9 @@ gem "bootsnap", "~> 1.4"
 gem "puma", ">= 5.0.0"
 gem "uglifier", "~> 4.1"
 
+# TODO: Remove after https://github.com/decidim/decidim/issues/8512 is resolved
+gem "webpacker", "6.0.0.rc.5"
+
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION

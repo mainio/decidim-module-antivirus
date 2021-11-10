@@ -7,7 +7,7 @@ module Decidim
         Ratonvirus.configure do |config|
           config.scanner = :clamby
           config.storage = :multi, {
-            storages: [:filepath, :carrierwave]
+            storages: [:filepath, :active_storage]
           }
         end
       end

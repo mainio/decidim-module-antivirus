@@ -14,7 +14,7 @@ describe Decidim::Antivirus::Engine do
     expect(Ratonvirus.scanner).to be_a(Ratonvirus::Scanner::Clamby)
     expect(Ratonvirus.storage).to be_a(Ratonvirus::Storage::Multi)
     expect(Ratonvirus.storage.config[:storages]).to eq(
-      [:filepath, :carrierwave]
+      [:filepath, :active_storage]
     )
   end
 

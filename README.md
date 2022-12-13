@@ -29,6 +29,11 @@ Check ClamAV installation and configuration instructions from:
 
 https://github.com/mainio/ratonvirus-clamby
 
+This documentation also contains a section about testing the virus detection
+without installing the ClamAV application. Refer to the "Testing without
+installing ClamAV" section of that documentation if you want to do this for
+development purposes.
+
 ## Installation
 
 Add this line to your application's Gemfile:

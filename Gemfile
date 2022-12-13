@@ -16,11 +16,7 @@ gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
 gem "bootsnap", "~> 1.4"
-gem "puma", ">= 5.0.0"
-gem "uglifier", "~> 4.1"
-
-# TODO: Remove after https://github.com/decidim/decidim/issues/8512 is resolved
-gem "webpacker", "6.0.0.rc.5"
+gem "puma", "~> 5.0"
 
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
@@ -31,11 +27,11 @@ end
 
 group :development do
   gem "faker", "~> 2.14"
-  gem "letter_opener_web", "~> 1.4", ">= 1.4.0"
+  gem "letter_opener_web", "~> 2.0"
   gem "listen", "~> 3.1"
   gem "spring", "~> 2.0"
   gem "spring-watcher-listen", "~> 2.0"
-  gem "web-console", "~> 3.7", ">= 3.7.0"
+  gem "web-console", "~> 4.2"
 end
 
 group :test do

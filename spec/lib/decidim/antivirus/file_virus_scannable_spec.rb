@@ -3,7 +3,7 @@
 require "spec_helper"
 
 describe Decidim::Antivirus::FileVirusScannable do
-  let(:subject) do
+  subject do
     Class.new do
       include ActiveModel::Model # For `attr_accessor`
       include ActiveModel::Validations # Testing the validators

@@ -10,6 +10,9 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 3.0"
   spec.authors = ["Antti Hukkanen"]
   spec.email = ["antti.hukkanen@mainiotech.fi"]
+  spec.metadata = {
+    "rubygems_mfa_required" => "true"
+  }
 
   spec.summary = "Provides antivirus checks for Decidim file uploads."
   spec.description = "Adds antivirus checks through ClamAV for Decidim's public file uploads."

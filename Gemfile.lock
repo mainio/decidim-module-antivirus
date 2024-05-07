@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     decidim-antivirus (0.27.0)
-      decidim-core (~> 0.27.6)
+      decidim-core (~> 0.27.0)
       ratonvirus (~> 0.3.2)
       ratonvirus-clamby (~> 0.3.0)
 
@@ -813,9 +813,9 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (~> 1.4)
   byebug (~> 11.0)
-  decidim (~> 0.27.6)
+  decidim (~> 0.27.0)
   decidim-antivirus!
-  decidim-dev (~> 0.27.6)
+  decidim-dev (~> 0.27.0)
   faker (~> 2.14)
   letter_opener_web (~> 2.0)
   listen (~> 3.1)

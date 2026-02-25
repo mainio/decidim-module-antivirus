@@ -48,7 +48,6 @@ module Decidim::Admin
             es: "Test description",
             ca: "Test description"
           )
-          
         end
 
         within ".new_attachment" do

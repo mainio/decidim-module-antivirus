@@ -15,7 +15,6 @@ DECIDIM_VERSION = Decidim::Antivirus::DECIDIM_VERSION
 gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
 
-
 gem "bootsnap", "~> 1.17"
 gem "puma", "~> 6.4"
 

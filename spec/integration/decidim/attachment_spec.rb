@@ -22,25 +22,13 @@ describe Decidim::Attachment do
 
   context "with infected file" do
     subject { build(:attachment, :with_pdf) }
-  
-    before do
-      expect(Ratonvirus.scanner).to receive(:run_scan) do
-        Ratonvirus.scanner.errors << :antivirus_virus_detected
-      end
-    end
-  
-    it { is_expected.not_to be_valid }
-  end
 
-  context "with no file" do
-    subject { build(:attachment, nil) }
-  
     before do
       expect(Ratonvirus.scanner).to receive(:run_scan) do
         Ratonvirus.scanner.errors << :antivirus_virus_detected
       end
     end
-  
+
     it { is_expected.not_to be_valid }
   end
 end

@@ -29,6 +29,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "decidim-core", Decidim::Antivirus::DECIDIM_VERSION
-  spec.add_dependency "ratonvirus", "~> 0.4.0"
-  spec.add_dependency "ratonvirus-clamby", "~> 0.4.0"
+  spec.add_dependency "ratonvirus", "~> 0.5.0"
+  spec.add_dependency "ratonvirus-clamby", "~> 0.5.0"
 end

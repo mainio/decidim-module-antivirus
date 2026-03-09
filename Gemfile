@@ -14,7 +14,6 @@ DECIDIM_VERSION = Decidim::Antivirus::DECIDIM_VERSION
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
-# gem "decidim-favorites", github: "mainio/decidim-module-favorites", branch: "main"
 
 gem "bootsnap", "~> 1.17"
 
@@ -24,9 +23,6 @@ gem "uglifier", "~> 4.1"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
-    # Fix issue with simplecov-cobertura
-  # See: https://github.com/jessebs/simplecov-cobertura/pull/44
-  gem "rexml", "3.4.1"
 end
 
 group :development do

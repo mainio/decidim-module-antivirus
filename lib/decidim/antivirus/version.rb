@@ -2,7 +2,12 @@
 
 module Decidim
   module Antivirus
-    VERSION = "0.29.0"
-    DECIDIM_VERSION = "~> 0.29.0"
+    def self.version
+      "0.30.0"
+    end
+
+    def self.decidim_version
+      "~> 0.30.0"
+    end
   end
 end

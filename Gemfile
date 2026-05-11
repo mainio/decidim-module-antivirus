@@ -10,7 +10,7 @@ base_path = ""
 base_path = "../" if File.basename(__dir__) == "development_app"
 require_relative "#{base_path}lib/decidim/antivirus/version"
 
-DECIDIM_VERSION = Decidim::Antivirus::DECIDIM_VERSION
+DECIDIM_VERSION = Decidim::Antivirus.decidim_version
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
@@ -23,13 +23,14 @@ gem "uglifier", "~> 4.1"
 group :development, :test do
   gem "byebug", "~> 11.0", platform: :mri
   gem "decidim-dev", DECIDIM_VERSION
+
   # Fix issue with simplecov-cobertura
   # See: https://github.com/jessebs/simplecov-cobertura/pull/44
   gem "rexml", "3.4.1"
 end
 
 group :development do
-  gem "faker", "~> 3.2.2"
+  gem "faker", "~> 3.2"
   gem "letter_opener_web", "~> 2.0"
   gem "listen", "~> 3.8"
   gem "web-console", "~> 4.2"

@@ -7,7 +7,7 @@ require "decidim/antivirus/version"
 Gem::Specification.new do |spec|
   spec.name = "decidim-antivirus"
   spec.version = Decidim::Antivirus.version
-  spec.required_ruby_version = ">= 3.3"
+  spec.required_ruby_version = ">= 3.4"
   spec.authors = ["Antti Hukkanen"]
   spec.email = ["antti.hukkanen@mainiotech.fi"]
   spec.metadata = {
@@ -29,6 +29,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "decidim-core", Decidim::Antivirus.decidim_version
-  spec.add_dependency "ratonvirus", "~> 0.5.0"
-  spec.add_dependency "ratonvirus-clamby", "~> 0.5.0"
+  spec.add_dependency "ratonvirus", "~> 0.6.0"
+  spec.add_dependency "ratonvirus-clamby", "~> 0.6.0"
 end

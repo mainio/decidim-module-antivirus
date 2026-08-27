@@ -14,8 +14,6 @@ DECIDIM_VERSION = Decidim::Antivirus.decidim_version
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-antivirus", path: "."
-gem "ratonvirus", github: "mainio/ratonvirus"
-gem "ratonvirus-clamby", github: "mainio/ratonvirus-clamby"
 
 gem "bootsnap", "~> 1.17"
 
